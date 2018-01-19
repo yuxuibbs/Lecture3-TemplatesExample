@@ -10,4 +10,8 @@ def lemons():
 @app.route('/apples')
 def plants():
     ## Add code here
-    return render_template('results.html',flavors=flavor_options, name_len=name_len, name=name) 
+    return render_template('results.html',flavors=flavor_options, name_len=name_len, name=name)
+
+
+if __name__ == "__main__":
+    app.run(use_reloader=True,debug=True)
