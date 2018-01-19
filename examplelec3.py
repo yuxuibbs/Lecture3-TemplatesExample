@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route('/oranges')
 def lemons():
-    ## Add code here
+    title = "My Ice Cream Form"
+    # Add code -- what type should options hold?
     return render_template('seeform.html',title=title_var, lst_stuff=options)
 
 @app.route('/apples')
